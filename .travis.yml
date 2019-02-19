@@ -2,3 +2,10 @@ language: node_js
 node_js: node
 services:
 - mongodb
+deploy:
+  provider: heroku
+  api_key:
+    secure: nSbSFLV9prV85o9Zo/9Jp0wzgWlxKgug0m2zbKdSgLE5rWeoCEE9aupS2kh8mgWN3V2LD2adkNZtKkyQyjKa/LFszM8Iq7Xc8KJlWdvnvBunv0SaQcAMrGyLSM2pdygZPVNL+Ma6yvb4MSPnN3zWU3a1h4cjAn5q3BxtohIcnd9uwwVuq6Og7IQNsozy3hAI/ENr/ZWMSOD1GMUntIKGAf+r9RmojM0jpvfV3dOfpu0sx25z2eoG4bfnzOzR+H8LNuasRB8iquoi91PwhQJ1KjLfPC2fc1A7ltPbObCwZIilxdx9+NHuq8AhUfRqBW/ExtN0PRsDc3UtqeGgeuG0kFJxrdxTvGAcrSqCOnTT6xwxfUnd3txn85EglORUM8w68hinM/oxrz3xdYfAD4YfMxCtNXW16CkAeHZPkyN4VoOHK2B7x21Vtm9h3802ov8GaCZbLrrxFBSBr0fknNIKpnreifxxmVMyHnQ3qi6/2jRuzHR/pExt4IXhM732UHEkKh71IFhcGTglX/o2T91AbJTnU1hjB0Fd+QdJaasKuzCST9ZZKK1Lj5H2KXnpu6zRk85tq7KYAivUWnoJ0ki7TDIRMJ9NMg577TbDdAueXS6Lq+GsHOryePeojCH3oGwO2EQAkQ/SZBAnuNyB+NkMjkyIwnROHeLxX3KxwsC2WlQ=
+  app: blog-app-mongoose-integration-test
+  on:
+    repo: patriots123/blog-app-mongoose-integration-test
